@@ -1,4 +1,4 @@
-* {	padding: 0; margin: 0; }
+﻿* {	padding: 0; margin: 0; }
 
 /* default body style */
 body { font-family: Arial; font-size: 12px; }
@@ -25,25 +25,35 @@ body { font-family: Arial; font-size: 12px; }
 .msgwebcontainer h2 { font-size: 18px;}
 .msgwebcontainer h3 { font-size: 16px;}
 .msgwebcontainer h4 { font-size: 14px;}
-.msgwebcontainer input[type="text"], .msgwebcontainer input[type="password"],.msgwebcontainer input[type="email"],.msgwebcontainer input[type="number"],.msgwebcontainer input[type="tel"],.msgwebcontainer input[type="url"],.msgwebcontainer textarea, .msgwebcontainer select { color:inherit; background-color: transparent; width: 98%; border:1px solid; padding: 0;margin: 0;font-family: inherit;}
+.msgwebcontainer input[type=text], .msgwebcontainer input[type=password], .msgwebcontainer input[type=email], .msgwebcontainer input[type=number], .msgwebcontainer input[type=tel], .msgwebcontainer input[type=url], .msgwebcontainer textarea, .msgwebcontainer select { color:inherit; background-color: transparent; width: 98%; border:1px solid; padding: 0;margin: 0;font-family: inherit;}
 .msgwebcontainer input[type=radio] { float: none; width: auto}
-.msgwebcontainer input[type="image"] { border: none; cursor: pointer }
-.msgwebcontainer input[type="submit"] {cursor: pointer; font-family: inherit }
+.msgwebcontainer input[type=image] { border: none; cursor: pointer }
+.msgwebcontainer input[type=submit] {cursor: pointer; font-family: inherit }
 .msgwebcontainer button { font-family: inherit;background-color: transparent }
 
 .msgwebcontainer input.on_error { background-color: #f778a1; } 
 .msgwebcontainer button { font-family: inherit;background-color: transparent }
 .msgwebcontainer strong { font-weight: bold;}
 .msgwebcontainer button { font-family: inherit;background-color: transparent }
-div[data-wow-offset='10']{visibility: hidden}
+div[data-wow-offset="10"]{visibility: hidden}
 .msgwebcontainer img { 
 	border: none; 
 	vertical-align: middle; 
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 transparent png */   
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFfFF)"; /* IE8 transparent png */   
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 transparent png*/
 }
-.msgwebcontainer form { display: inline-block; width: 100%; }
-.clear_div { font-size: 0px; overflow: hidden; height: 0px; clear: both }
+.msgwebcontainer form {
+	display: inline-block;
+	width: 100%;
+	background-color: #008080;
+}
+.clear_div {
+	font-size: 0px;
+	overflow: hidden;
+	height: 0px;
+	clear: both;
+	background-color: #008080;
+}
 .msgwebcontainer button[class*=_container]{cursor:pointer}
 /* rtl */
 .msgwebcontainer[direction=rtl] ul, .msgwebcontainer[direction=rtl] ol { margin: 0px 16px 0px 0px; }
@@ -247,7 +257,7 @@ div[data-wow-offset='10']{visibility: hidden}
 .msg_comment_form_input { display: inline-block; width:160px }
 .msg_forum .msg_comment_form_input input, .msg_forum .msg_comment_form_input textarea { width: 200px;border-radius: 5px;border: 1px solid;border-color: #adadad; padding:4px}
 .msg_forum  #msg_comment_captcha{ width: 120px;border-radius:0; border-color:#484848}
-.msg_comment_form_input input[name='msg_comment_datetime'] { direction: ltr }
+.msg_comment_form_input input[name=msg_comment_datetime] { direction: ltr }
 .msg_forum_form_cover_message {	display: none; }
 .msg_forum_sub_msg_icon { background-image: url('../images/scheduler/scheduler_next_errow_normal.png');background-repeat: no-repeat;background-position:right;padding-left:5px;}
 .msg_forum_thread_bullet:hover{cursor: pointer}
@@ -602,12 +612,7 @@ div[direction=ltr] .fieldinput { float: left; }
 .msg-callmeback .waiting_gif {  background-image: url(../static-images/mobeepreview/msgloading.gif); background-repeat:no-repeat;background-position:center;width: 30px;height: 30px;position: absolute;left: 45%;top: 50%;}
 .msg-callmeback.mobileSite .cmb-details .fieldinput{width:100%}
 
-textarea,
-input.text,
-input[type="text"],
-input[type="button"],
-input[type="submit"],
-.input-checkbox {-webkit-appearance: none;-ms-border-radius: 0;border-radius: 0;}
+textarea, input.text, input[type=text], input[type=button], input[type=submit], .input-checkbox {-webkit-appearance: none;-ms-border-radius: 0;border-radius: 0;}
 
 .loading_div .waiting_gif {  background-image: url(../static-images/mobeepreview/msgloading.gif); background-repeat:no-repeat;background-position:center;width: 30px;height: 30px;position: absolute;left: 50%;top: 30%;}
 .loading_div{    position: absolute;
@@ -620,8 +625,8 @@ input[type="submit"],
       height: auto;}
 
 
-#Left.Left_wp_outer[iscomp='true']{position: relative}
-#Right.Right_wp_outer[iscomp='true']{position: relative}
+#Left.Left_wp_outer[iscomp=true]{position: relative}
+#Right.Right_wp_outer[iscomp=true]{position: relative}
 
 .msgbody  #ui-datepicker-div{ background-color: #fff;padding: 0;border-radius:  5px;
 border-width:  1px;
