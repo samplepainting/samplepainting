@@ -1,6 +1,6 @@
 /*
 To utilize add this to your page somewhere:
-        <script language="javascript" src="http://www.stam.com/beforeYouGo/camilyo_byg.js"></script>
+        <script language="javascript" src="http://samplepainting.com/js/byg/camilyo_byg.js"></script>
         <script language="javascript">
             cambyg_init('<YOUR-CAMILYO-BEFORE-YOU-GO-PAGE-URL>');
         </script>
